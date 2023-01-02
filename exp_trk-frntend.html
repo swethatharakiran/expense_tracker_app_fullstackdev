@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<title>Expense tracker app</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+               
+           
+                <form class="form" id="form1">
+                    <label for="expamount">Choose ExpenseAmount</label>
+                    <input class="form-control form-control-sm" id="expenseamount" type="number" name="expamount"  required>
+                    <label for="desc">Choose description</label>
+                    <input class="form-control form-control-sm" id="desc" type="text" name="desc"  required>
+                    <label for="category">Choose category</label>
+                    <input class="form-control form-control-sm" id="category" type="text" name="category"  required>
+                    <br>
+                    <input class="btn btn-outline-primary" type="submit" name="Add expense" value="Add Expense">
+                </form>
+                <br>
+                <ul id="items"></ul>
+            
+            
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
+<script src="trackcrud.js"></script>    
+</body>
+</html>
